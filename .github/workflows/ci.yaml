@@ -22,7 +22,7 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: quay.io
-          username: joe_ayoub
+          username: joe_ayoub+joe_robot
           password: ${{ secrets.ROBOT_SECRET}}
 
       - name: Extract metadata (tags, labels) for Docker
